@@ -1,0 +1,25 @@
+.level {
+  background-color: $cream-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 4px solid $dark-blue2-color;
+
+  .level__title {
+    text-decoration: none;
+    color: $orange-color;
+    text-transform: uppercase;
+    font-family: "SEGA LOGO FONT", sans-serif;
+    font-size: 20px;
+    letter-spacing: 3pt;
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid red;
+    border-style: dotted;
+    background-color: $dark-blue2-color;
+    &:hover {
+      color: $yellow-color;
+      font-style: italic;
+    }
+  }
+}

@@ -1,0 +1,93 @@
+h2 {
+    text-align: center;
+    text-decoration: none;
+    color: $orange-color;
+    text-transform: uppercase;
+    font-family: "SEGA LOGO FONT", sans-serif;
+    font-size: 10px; 
+    padding: 10px;
+    border-radius: 25px;
+    border: 3px solid red;
+    border-style: dotted;
+    background-color: $dark-blue-trasnparent-color;
+    &:hover {
+        color: $yellow-color;
+        font-style: italic;
+    }
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: $dark-blue-color;
+  border-bottom: 4px solid black;
+
+  @include desktop {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  @include tablet {
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+.gallery__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 200px;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.589) 0px 5px 15px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.gallery__item--1 {
+    background-image: url("../assets/images/stage1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+ .gallery__item--2 {
+    background-image: url("../assets/images/stage2.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .gallery__item--3 {
+    background-image: url("../assets/images/stage3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }  
+  .gallery__item--4 {
+    background-image: url("../assets/images/stage4.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .gallery__item--5 {
+    background-image: url("../assets/images/stage5.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .gallery__item--6 {
+    background-image: url("../assets/images/stage6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .gallery__item--7 {
+    background-image: url("../assets/images/stage7.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .gallery__item--8 {
+    background-image: url("../assets/images/stage6.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }

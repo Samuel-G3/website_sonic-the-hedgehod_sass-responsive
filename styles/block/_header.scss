@@ -1,0 +1,44 @@
+nav {
+    background-color: $dark-blue-color;
+  
+    .navigator {
+      flex-direction: column;
+      border-bottom: solid $dark-blue2-color;
+      
+      @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+  
+    .navigator_item { 
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 10px; 
+      
+    }
+  
+    a {
+      line-height : 25px;
+      text-align: center;
+      text-decoration: none;
+      color: $orange-color;
+      text-transform: uppercase;
+      font-family: "SEGA LOGO FONT", sans-serif;
+      font-size: 20px;
+      letter-spacing: 3pt;
+      padding: 10px;
+      border-radius: 25px;
+      border: 3px solid red;
+      border-style: dotted;
+      background-color: $dark-blue2-color; 
+  
+      &:hover {
+        color: $yellow-color;
+        font-style: italic;
+      }
+    }
+  }
+  

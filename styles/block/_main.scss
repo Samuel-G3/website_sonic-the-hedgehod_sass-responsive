@@ -1,0 +1,13 @@
+ 
+  .main {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    @include tablet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
