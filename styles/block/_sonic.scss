@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;  
-  border-bottom: solid $dark-blue2-color;
+  
 }
 .sonic__title { 
   text-align: center;
@@ -32,11 +32,13 @@
 
     @include desktop {
       width: 40%;
+   
     }
     @include tablet {
-      width: 40%;
-    }
+      width: 40%; 
+      
   }
+}
   .sonic__title--text {
     font-weight: bold;
     color: $dark-blue2-color;

@@ -2,14 +2,17 @@ nav {
     background-color: $dark-blue-color;
   
     .navigator {
+      display: flex; 
+      justify-content: space-around;
       flex-direction: column;
       border-bottom: solid $dark-blue2-color;
-      
+      border-width: 10px;
       @include desktop {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-      }
+        flex-direction: row;
+       }
+        @include tablet {
+      flex-direction: row;
+       }
     }
   
     .navigator_item { 
@@ -17,7 +20,7 @@ nav {
       align-items: center;
       justify-content: space-around;
       margin: 10px; 
-      
+     
     }
   
     a {

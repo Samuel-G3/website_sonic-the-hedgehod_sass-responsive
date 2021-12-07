@@ -42,23 +42,34 @@ nav {
 }
 
 nav .navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   border-bottom: solid #052858;
+  border-width: 10px;
 }
 
 @media only screen and (min-width: 992px) {
   nav .navigator {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  nav .navigator {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -97,6 +108,7 @@ nav a:hover {
 
 @media only screen and (min-width: 992px) {
   .main {
+    background-color: #f5cf8b;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -112,6 +124,7 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
   .main {
+    background-color: #f5cf8b;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -137,7 +150,6 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: solid #052858;
 }
 
 .sonic__title {
@@ -204,10 +216,10 @@ nav a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: solid #052858;
 }
 
 .sega__title {
+  text-align: center;
   text-decoration: none;
   color: #eda818;
   text-transform: uppercase;

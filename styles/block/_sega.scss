@@ -1,13 +1,11 @@
- 
 .sega {
   background-color: $cream-color;
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  border-bottom: solid $dark-blue2-color;
- 
+  align-items: center;
 }
-.sega__title { 
+.sega__title {
+  text-align: center;
   text-decoration: none;
   color: $orange-color;
   text-transform: uppercase;
@@ -18,7 +16,8 @@
   border-radius: 25px;
   border: 3px solid red;
   border-style: dotted;
-  background-color: $dark-blue2-color; 
+  background-color: $dark-blue2-color;
+  
   &:hover {
     color: $yellow-color;
     font-style: italic;
@@ -26,24 +25,22 @@
 }
 
 .sega__image {
-   
-    width: 90%;
+  width: 90%;
 
-    @include desktop {
-      width: 51%;
-    }
-    @include tablet {
-      width: 51%;
-    }
+  @include desktop {
+    width: 51%;
   }
-  .sega__title--text {
-    font-weight: bold;
-    color: $dark-blue2-color;
-    padding: 32px;
-    text-align: center;
-    &:hover {
-      color: red;
-      font-style: italic;
-    }
+  @include tablet {
+    width: 51%;
   }
-  
+}
+.sega__title--text {
+  font-weight: bold;
+  color: $dark-blue2-color;
+  padding: 32px;
+  text-align: center;
+  &:hover {
+    color: red;
+    font-style: italic;
+  }
+}

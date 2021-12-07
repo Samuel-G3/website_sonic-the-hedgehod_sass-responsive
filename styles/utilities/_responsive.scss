@@ -6,10 +6,16 @@
 // =============================================================================
 // _responsive.scss settings
 // =============================================================================
-
+$mobile: 320px;
 $tablet: 768px;
 $desktop: 992px;
 $large: 1200px;
+
+@mixin mobile {
+  @media only screen and (min-width: $mobile) {
+    @content;
+  }
+}
 
 @mixin tablet {
   @media only screen and (min-width: $tablet) {

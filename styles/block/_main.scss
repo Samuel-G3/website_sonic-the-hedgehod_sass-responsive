@@ -1,11 +1,13 @@
  
   .main {
     @include desktop {
+      background-color: $cream-color;
       display: flex;
       flex-direction: row;
       align-items: center;
     }
     @include tablet {
+      background-color: $cream-color;
     display: flex;
     flex-direction: row;
     align-items: center;
